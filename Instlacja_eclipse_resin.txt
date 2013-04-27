@@ -1,0 +1,75 @@
+0. Zainstaluj jdk!!
+
+1. Pobierz Eclipse JEE oraz Resin (nie pro).
+
+2. Programy wypakuj na C:\
+* C:\eclipse
+* C:\resin-4.0.35
+
+3. Uruchom Eclipse i wskaż katalog workspace np.
+* C:\Users\Marcin\Documents\Eclipse_WS
+
+4. Przejdź do File > New > Other:
+	Server > Server:
+		Kliknij na link "Download additional server adapters":
+			-> Wybierz "Resin (Java EE Web Profile) Server"
+Po zainstalowaniu należy uruchomić ponownie Eclipse.
+
+5. Przejdź do Window > Preferences:
+	Java > Build Path > Classpath Variables:
+		-> Kliknij na pzycisk "New...":
+			Name: RESIN_HOME
+			Path: C:\resin-4.0.35
+	Server > Runtime Environments:
+		Kliknij na przycisk "Add...":
+			Resin > Resin 4.0:
+				-> Kliknij na przycisk "Next >"
+					JRE: Default JRE
+					Resin Home: C:\resin-4.0.35
+						-> Kliknij na przycisk "Finish"
+
+6. Przejdź do File > New > Other:
+	Server > Server:
+		Kliknij na przycisk "Next >"
+			-> Wybieramy:
+				Resin > Resin 4.0
+				Server's host name: localhost
+				Server name: Resin 4.0 at localhost
+				Server runtime environment: Resin 4.0
+					-> Kliknij na przycisk "Next >"
+						Resin Home: C:\resin-4.0.35
+						Working Directory: C:\resin-4.0.35
+						Port: 8080
+						Webapps Directory: webapps ----->> będą zapisywać się w C:\resin-4.0.35\webapps
+						Admin User: admin
+						Admin Password: 123
+							-> Kliknij na przycisk "Finish"
+
+7. Przejdź do Window > Show View:
+	-> Wybierz "Servers"
+
+8. Przejdź do Window > Preferences:
+	General > Workspace:
+		Text file encoding: Other
+			-> Wybierz UTF-8
+
+9. Przejdź do Window > Web Browser
+	-> Wybierz 1 Default system web browser
+
+
+
+
+Importowanie projektów i uruchamianie
+1. Pobierz: https://github.com/kongra/SAN/zipball/master
+
+2. Z pobranej paczki z katalogu - kongra-SAN-08b3d57.zip\kongra-SAN-08b3d57\2013 letni\Lodz\Systemy szkieletowe JEE
+	Skopiuj wszystkie katalogi (oprócz Servers) do: C:\Users\Marcin\Documents\Eclipse_WS
+
+3. Uruchom Eclipse, wybierz File > Import...
+	General > Existing Projects into Workspace
+		Select root directory: C:\Users\Marcin\Documents\Eclipse_WS
+			-> Zaznacz wszystkie wcześniej skopiowane projekty
+
+4. Aby uruchomić kliknij PPM na projekt i wybierz:
+	Run as > Run on server
+		-> Kliknij na przycisk "Finish"
