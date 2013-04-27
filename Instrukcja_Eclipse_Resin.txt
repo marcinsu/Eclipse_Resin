@@ -13,13 +13,17 @@
 	Server > Server:
 		Kliknij na link "Download additional server adapters":
 			-> Wybierz "Resin (Java EE Web Profile) Server"
-Po zainstalowaniu należy uruchomić ponownie Eclipse.
+				-> Kliknij na przycisk "Next >"
+					-> Zaakceptuj licencje, kliknij na przycisk "Finish"
+						-> Kliknij na przycisk 2x "OK"
+							-> Zrestartuj program klikając na przycisk "Yes"
 
 5. Przejdź do Window > Preferences:
 	Java > Build Path > Classpath Variables:
 		-> Kliknij na pzycisk "New...":
 			Name: RESIN_HOME
 			Path: C:\resin-4.0.35
+				-> W przypadku komunikatu kliknij na przycisk "Yes"
 	Server > Runtime Environments:
 		Kliknij na przycisk "Add...":
 			Resin > Resin 4.0:
@@ -27,6 +31,7 @@ Po zainstalowaniu należy uruchomić ponownie Eclipse.
 					JRE: Default JRE
 					Resin Home: C:\resin-4.0.35
 						-> Kliknij na przycisk "Finish"
+	-> Zatwierdź ustawienia klikając na przycisk "OK"
 
 6. Przejdź do File > New > Other:
 	Server > Server:
@@ -52,6 +57,7 @@ Po zainstalowaniu należy uruchomić ponownie Eclipse.
 	General > Workspace:
 		Text file encoding: Other
 			-> Wybierz UTF-8
+	-> Zatwierdź ustawienia klikając na przycisk "OK"
 
 9. Przejdź do Window > Web Browser
 	-> Wybierz "1 Default system web browser"
@@ -68,7 +74,7 @@ Importowanie projektów i uruchamianie
 3. Uruchom Eclipse, wybierz File > Import...
 	General > Existing Projects into Workspace
 		Select root directory: C:\Users\Marcin\Documents\Eclipse_WS
-			-> Zaznacz wszystkie wcześniej skopiowane projekty
+			-> Kliknij na przycisk "Finish"
 
 4. Aby uruchomić kliknij PPM na projekt i wybierz:
 	Run as > Run on server
