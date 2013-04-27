@@ -54,7 +54,7 @@ Po zainstalowaniu należy uruchomić ponownie Eclipse.
 			-> Wybierz UTF-8
 
 9. Przejdź do Window > Web Browser
-	-> Wybierz 1 Default system web browser
+	-> Wybierz "1 Default system web browser"
 
 
 
