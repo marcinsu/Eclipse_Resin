@@ -65,6 +65,11 @@
 
 
 
+W przypadku wystąpienia błędu kompilacji (nie odnaleziono jre, jdk itd.)
+http://stackoverflow.com/questions/2030434/eclipse-no-java-jre-jdk-no-virtual-machine?answertab=votes#tab-top
+
+
+
 Importowanie projektów i uruchamianie
 1. Pobierz: https://github.com/kongra/SAN/zipball/master
 
